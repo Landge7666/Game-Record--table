@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎮 Game Record Table</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎮 Game Record Table</h1>
+    <p>Jodi Game 🎮 Single Ank Game</p>
+    <input type="date" id="playDate" />
+  </header>
+
+  <section class="buttons">
+    <button onclick="addRow('Jodi Game')">➕ Add Row Jodi</button>
+    <button onclick="addRow('Ank Game')">➕ Add Row Ank</button>
+    <button onclick="saveRecords()">💾 Save Record</button>
+    <button onclick="saveRowAnk()">💾 Save Row Ank</button>
+    <button onclick="saveAnkWeek()">📆 Add Ank Week</button>
+    <button onclick="saveAnkMonth()">🗓 Add Ank Month</button>
+    <button onclick="saveJodiWeek()">📆 Add Jodi Game Week</button>
+    <button onclick="saveJodiMonth()">🗓 Add Jodi Game Month</button>
+    <button onclick="showSavedRecords()">📋 All Saved Records</button>
+    <button onclick="showWeekRecords()">📆 Week Records</button>
+    <button onclick="showMonthRecords()">🗓 Month Records</button>
+    <button onclick="clearAll()">🗑 Clear All</button>
+    <button onclick="toggleCalculator()">💾 Digital Calculator</button>
+    <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Date</th>
+        <th>Game Name</th>
+        <th>Total Bid</th>
+        <th>Credit</th>
+        <th>Debit</th>
+        <th>Total Win</th>
+        <th>Total Loss</th>
+        <th>Play Bid</th>
+        <th>Win Bid</th>
+        <th>❌</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <footer id="totalSummary">
+    <h3>Total Summary:</h3>
+    <p>Total Bid: <span id="totalBid">0</span></p>
+    <p>Total Credit: <span id="totalCredit">0</span></p>
+    <p>Total Debit: <span id="totalDebit">0</span></p>
+    <p>Total Win: <span id="totalWin">0</span></p>
+    <p>Total Loss: <span id="totalLoss">0</span></p>
+  </footer>
+
+  <section id="calculator" style="display: none;">
+    <!-- Add a calculator here later -->
+    <h3>Calculator (Coming Soon)</h3>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
